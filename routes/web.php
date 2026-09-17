@@ -40,3 +40,7 @@ Route::prefix('admin')
         Route::resource('memories', AdminMemoryController::class);
 
     });
+
+Route::get('/test', function () {
+    return 'Laravel berhasil jalan di Vercel!';
+});
