@@ -6,6 +6,10 @@ use App\Http\Controllers\MemoryController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\MemoryController as AdminMemoryController;
 
+Route::get('/test', function () {
+    return 'Laravel berhasil jalan di Vercel!';
+});
+
 
 Route::get('/', [MemoryController::class, 'index']);
 
